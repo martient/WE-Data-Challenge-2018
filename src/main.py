@@ -1,10 +1,11 @@
 #!/usr/bin/python
 # coding: utf-8
 
-import clean
-import json_transform as transform
-import sys
 from pprint import pprint
+import json_transform as transform
+import friend_finder as ff
+import clean
+import sys
 import csv
 import json
 
@@ -20,7 +21,7 @@ def main():
 	f = open("ressource/dataset.json", "w")
 	f.write(json.dumps(json_dataset))
 	f.close()
-	
+	ff.data_process(json_dataset)
 
 
 if __name__ == '__main__':

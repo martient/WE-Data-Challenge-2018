@@ -43,10 +43,10 @@ def calc_move(dataset, delta):
 		y = 0
 		tmp_move = 0
 		while (y + 1 < len_data):
-			X1 = float(dataset[y][i].replace(',', '.'))
-			X2 = float(dataset[y][i + delta].replace(',', '.'))
-			Y1 = float(dataset[y + 1][i].replace(',', '.'))
-			Y2 = float(dataset[y + 1][i + delta].replace(',', '.'))
+			X1 = float(dataset[y][i])
+			X2 = float(dataset[y][i + delta])
+			Y1 = float(dataset[y + 1][i])
+			Y2 = float(dataset[y + 1][i + delta])
 			tmp_move += (X2 - X1)**2 + (Y2 - Y1)**2
 			y += 2
 		dataset_move.append(tmp_move)
