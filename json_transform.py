@@ -20,7 +20,6 @@ def test():
 	while (user_index < 40):
 		json_format_tmp = {}
 		json_format_tmp["id"] = user_index
-		json_format_tmp[{}] = []
 		json_format_tmp["x"] = 10
 		print json.dumps(json_format_tmp, ensure_ascii=False)
 		user_index += 1
