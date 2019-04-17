@@ -35,3 +35,8 @@ For exemple
 ![Distance](./Docs/picture/groups_distance.png)
 
 ![Teams](./Docs/picture/friends_grp.png)
+
+
+## Final poster
+
+![Poster](./Docs/picture/bilan.png)
