@@ -26,16 +26,16 @@ def data_process(datas):
 				Y2 = float(user2[1])
 				tmp.append(sqrt((X2 - X1)**2 + (Y2 - Y1)**2))
 			distance.append(tmp)
-		#plt.imshow(distance)
-		#plt.show()
+		plt.imshow(distance)
+		plt.show()
 		liste = []
 		A = np.asarray(distance)
 		for j in range(1, len(A) - 1):
 			for k in range(i+1, len(A)):
 				liste.append(A[j][k])
-		#plt.hist(liste)
+		# plt.hist(liste)
 		tmp = np.percentile(np.array(liste), [i for i in range(11)])
-		#plt.imshow(A < 999.65)
+		# plt.imshow(A < 999.65)
 		cluster = exploit(np.asarray(distance))
 		plot = []
 		p = 0
@@ -61,8 +61,6 @@ def data_process(datas):
 			if cluster[p] == 9:
 				plt.scatter(user[0], user[1], s=40, c='grey', label='Group 9')
 			p += 1
-#			plot.append([, user[1], color])
 		plt.grid()
 		plt.show()
-		#print(tmp)
 		break

@@ -11,7 +11,7 @@ import json
 
 def main():
 	if len(sys.argv) < 2:
-		print "ERREUR 01: VEUILLEZ SPÉCIFIER LE CHEMIN DU DATASET .csv"
+		print "ERROR: Please give the path to the .csv"
 		sys.exit(84)
 	f = open(sys.argv[1], 'r')
 	dataset_rush = list(csv.reader(f.read().splitlines()))
@@ -22,7 +22,6 @@ def main():
 	f.write(json.dumps(json_dataset))
 	f.close()
 	ff.data_process(json_dataset)
-
 
 if __name__ == '__main__':
 	main()
