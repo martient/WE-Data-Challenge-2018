@@ -10,7 +10,7 @@
 
 Open in your browser -> visu-web/index.html
 
-### Script python
+### Required script python
 
 ``` bash
 pip install sklearn --user
